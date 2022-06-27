@@ -1,0 +1,144 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 96%;
+  }
+
+  main .container {
+    grid-template-columns: 5rem auto 30vw;
+    gap: 1rem;
+  }
+
+  main .left {
+    width: 5rem;
+    z-index: 5;
+  }
+
+  main .container .left .profile {
+    display: none;
+  }
+
+  .sidebar h3 {
+    display: none;
+  }
+
+  .left .btn {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1251px) {}
+
+@media screen and (max-width: 992px) {
+
+  main .container .left {
+    grid-column: 3/4;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .left .notifications-popup {
+    position: absolute;
+    left: -21rem;
+    width: 20rem;
+  }
+
+  .left .notifications-popup::before {
+    position: absolute;
+    top: 1.3rem;
+    left: calc(20rem - 0.6rem);
+    display: block;
+  }
+
+  main .container .middle {
+    grid-column: 1/3;
+
+  }
+
+  main .container {
+    grid-template-columns: 10vw auto 40vw;
+    gap: 1rem;
+  }
+
+  main .container .right {
+    width: 30vw;
+  }
+
+  .btn {
+    padding: 8px 22px;
+  }
+
+  .customize-theme .card {
+    width: 80vw;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  nav .search-bar {
+    display: none;
+  }
+
+  main .container {
+    grid-template-columns: 10vw auto 0vw;
+    gap: 1rem;
+  }
+
+  main .container .middle {
+    width: 80vw;
+  }
+
+  main .container .right {
+    display: none;
+  }
+
+  .customize-theme .card {
+    width: 86vw;
+  }
+
+
+}
+
+@media screen and (max-width: 576px) {
+  main .container .middle {
+    width: 75vw;
+  }
+
+  .middle .stroies {
+    height: 8rem;
+  }
+
+  .customize-theme .card {
+    width: 90vw;
+  }
+
+  .customize-theme .choose-bg {
+    gap: 1rem;
+  }
+
+  .customize-theme .choose-bg>div span {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .2rem;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .middle .stroies {
+    height: 6rem;
+  }
+
+  .middle .stroy .profile-photo {
+    position: relative;
+    left: -.6rem;
+  }
+
+  .middle .create-post {
+    display: none;
+  }
+
+  .customize-theme .card {
+    width: 92vw;
+  }
+}
