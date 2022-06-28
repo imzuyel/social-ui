@@ -89,6 +89,7 @@ img {
   -moz-border-radius: var(--border-radius);
   -ms-border-radius: var(--border-radius);
   -o-border-radius: var(--border-radius);
+  color: var(--color-primary);
 }
 
 .btn:hover {
@@ -423,7 +424,7 @@ main .left .handle h4 {
 .middle .stroy .profile-photo {
   width: 2rem;
   height: 2rem;
-  align-self: start;
+
   border: 3px solid var(--color-primary);
 }
 
@@ -861,9 +862,3 @@ main .container .right {
   display: none;
 }
 
-.mobile-menu-message {
-  display: none !important;
-}
-.display-grid{
-  display: grid !important;
-}
