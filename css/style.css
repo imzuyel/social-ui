@@ -861,4 +861,6 @@ main .container .right {
   font-size: 16px;
   display: none;
 }
-
+.uil-bookmark-full{
+   color: var(--color-primary);
+}
