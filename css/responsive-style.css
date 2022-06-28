@@ -89,14 +89,27 @@
     width: 80vw;
   }
 
+ main .container .messages{
+  display: none;
+ }
   main .container .right {
-    display: none;
+    position: relative;
+  }
+
+  main .container .messages {
+    position: absolute;
+    left: -451px;
+    top: 289px;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
   }
 
   .customize-theme .card {
     width: 86vw;
   }
-
+ main .container .messages .search-bar {
+  display: none;
+}
 
 }
 
@@ -122,9 +135,39 @@
     height: 1.2rem;
     margin-right: .2rem;
   }
+
+  main .container .messages {
+    position: absolute;
+    left: -481px;
+    top: 289px;
+    z-index: 100;
+    box-shadow: var(--box-shadow);
+    width: 73vw;
+  }
+
+  .mobile-menu-message-hide {
+    display: none !important;
+  }
+
+  .mobile-menu-message {
+    display: grid !important;
+  }
+
 }
 
 @media screen and (max-width: 490px) {
+  .left {
+    display: none;
+  }
+
+  .left-block {
+    display: grid;
+  }
+
+  main .container .middle {
+    width: 95vw;
+  }
+
   .middle .stroies {
     height: 6rem;
   }
@@ -140,5 +183,45 @@
 
   .customize-theme .card {
     width: 92vw;
+  }
+
+  .left .notifications-popup {
+    position: absolute;
+    left: -15rem;
+    width: 15rem;
+    font-size: 12px;
+  }
+
+  .left .notifications-popup::before {
+    position: absolute;
+    top: 1.3rem;
+    left: calc(15rem - 0.7rem);
+    display: block;
+  }
+
+  .middle .stroy .profile-photo {
+    width: 1.6rem;
+    height: 1.6rem;
+    align-self: center;
+    border: 1px solid var(--color-primary);
+    left: 1px;
+  }
+
+  .mobile-view .uil-bars {
+    display: block;
+  }
+
+  main .container .messages {
+    position: absolute;
+    left: -372px;
+    width: 62vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  main .container .messages {
+    position: absolute;
+    left: -331px;
+    width: 69vw;
   }
 }

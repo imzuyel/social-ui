@@ -27,7 +27,7 @@
   --sticky-top-left: 5.4rem;
   --sticky-top-right: -18rem;
 
-  --box-shadow: 0 0 1rem var(--color-primary);
+  --box-shadow: 0 0 1.5rem var(--color-primary);
 }
 
 *,
@@ -49,7 +49,9 @@ body {
   overflow-x: hidden;
 }
 
-/* General style */
+/* ====================================================== */
+/* ==================== General style =================== */
+/* ====================================================== */
 .container {
   width: 80%;
   margin: 0 auto;
@@ -106,7 +108,9 @@ img {
   color: var(--color-gray);
 }
 
-/* Navbar */
+/* ====================================================== */
+/* ======================= Navbar ======================= */
+/* ====================================================== */
 nav {
   width: 100%;
   background: var(--color-white);
@@ -151,7 +155,9 @@ nav .create {
   gap: 2rem;
 }
 
-/* Main */
+/* ====================================================== */
+/* ======================== Main ======================== */
+/* ====================================================== */
 main {
   position: relative;
   top: 1rem;
@@ -496,9 +502,11 @@ main .left .handle h4 {
   margin: 0.6rem;
 
 }
-.middle .feed .action-button .interaction-button a i{
+
+.middle .feed .action-button .interaction-button a i {
   color: var(--color-primary);
 }
+
 .middle .liked-by {
   display: flex;
 
@@ -843,4 +851,19 @@ main .container .right {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   margin-right: 1rem;
+}
+
+
+/* Mobile view  */
+.mobile-view .uil-bars {
+  color: var(--color-primary);
+  font-size: 16px;
+  display: none;
+}
+
+.mobile-menu-message {
+  display: none !important;
+}
+.display-grid{
+  display: grid !important;
 }

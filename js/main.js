@@ -1,5 +1,10 @@
+const mobileMenu = document.querySelector('.mobile-view');
+const left = document.querySelector('.left');
+const sidebar = document.querySelector('.sidebar');
+const mobileMenuMessage = document.querySelector('.mobile-menu-message');
 
 const menuItems = document.querySelectorAll('.menu-item');
+
 var notification = document.querySelector('.notifications-popup'),
   notificationCount = document.querySelector('.notification-count'),
 
@@ -20,6 +25,22 @@ var notification = document.querySelector('.notifications-popup'),
   Bg1 = document.querySelector('.bg-1'),
   Bg2 = document.querySelector('.bg-2'),
   Bg3 = document.querySelector('.bg-3')
+
+
+mobileMenu.addEventListener('click', () => {
+  left.classList.toggle('left-block');
+  sidebar.style.boxShadow = 'var(--box-shadow)';
+});
+mobileMenuMessage.addEventListener('click', () => {
+  messages.style.display = 'var(--box-shadow)';
+  messages.style.display = 'grid';
+  messageNotificationCount.style.display = 'none';
+  setTimeout(() => {
+    messages.style.boxShadow = 'none';
+    messages.style.display = 'none';
+  }, 2000);
+
+});
 
 
 

@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/responsive-style.css" />
   </head>
   <body>
+    <!--=====================================================-->
+    <!--====================== Navbar =======================-->
+    <!--=====================================================-->
     <nav>
       <div class="container">
         <h2 class="logo text-blod">mySocial</h2>
@@ -27,12 +30,21 @@
           <div class="profile-photo">
             <img src="images/profile-1.jpg" alt="logo" />
           </div>
+        <a href="#" name="mobile-view" class="mobile-view">  <i class="uil uil-bars"></i></a>
+        </div>
         </div>
       </div>
     </nav>
-    <!-- Main part -->
+    <!--=====================================================-->
+    <!--==================== Navbar end =====================-->
+    <!--=====================================================-->
+
+    <!--=====================================================-->
+    <!--=================== Main Section ====================-->
+    <!--=====================================================-->
     <main>
       <div class="container">
+        <!--=================== Left sidebar ====================-->
         <div class="left">
           <a href="#" class="profile">
             <div class="profile-photo">
@@ -115,7 +127,22 @@
             </a>
             <a
               href="#"
-              class="menu-item message-notifications"
+              class="menu-item message-notifications mobile-menu-message-hide"
+              id="notificationsMessage"
+            >
+              <span>
+                <i class="uil uil-envelope-alt">
+                  <small class="notification-count notification-count-message"
+                    >6</small
+                  >
+                </i>
+              </span>
+              <h3>Message</h3>
+            </a>
+
+             <a
+              href="#"
+              class="menu-item message-notifications mobile-menu-message"
               id="notificationsMessage"
             >
               <span>
@@ -146,6 +173,9 @@
           </div>
           <label class="btn btn-primary" for="create-post">Create post</label>
         </div>
+        <!--================= Left sidebar end ==================-->
+
+        <!--====================== Middle =======================-->
         <div class="middle">
           <!-- Stroy -->
           <div class="stroies">
@@ -642,6 +672,9 @@
             </div>
           </div>
         </div>
+        <!--==================== Middle end =====================-->
+
+        <!--=================== Right sidebar ===================-->
         <div class="right">
           <!-- Messages -->
           <div class="messages">
@@ -789,9 +822,16 @@
             </div>
           </div>
         </div>
+        <!--================= Right sidebar end =================-->
       </div>
     </main>
-    <!-- Theme Customize -->
+    <!--=====================================================-->
+    <!--================= Main Section end ==================-->
+    <!--=====================================================-->
+
+    <!--=====================================================-->
+    <!--================== Customize theme ==================-->
+    <!--=====================================================-->
     <div class="customize-theme">
       <div class="card">
         <h2>Customize your View</h2>
@@ -838,6 +878,10 @@
         </div>
       </div>
     </div>
+    <!--=====================================================-->
+    <!--================ Customize theme end ================-->
+    <!--=====================================================-->
+
     <script src="js/main.js"></script>
   </body>
 </html>
